@@ -1,0 +1,15 @@
+.game-space{
+    width: 100%;
+    text-align:center;
+}
+canvas {
+    display: inline;
+}
+
+#instruct{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0px;
+    font-family: monospace;
+    font-size: 20px;
+}
