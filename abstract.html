@@ -11,15 +11,48 @@
 </head>
 <body>
 
+    <div class="page-header">
+        <h2>Abstract</h2>
+    </div>
+<div class="row flex-xl-nowrap container">
+    <div class="col-md-3 bd-sidebar">
+        <div class="input-group mb-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Background Color</span>
+            </div>
+            <input type="text" id="bg-color" class="form-control" value="white">
+        </div>
+        <div class="input-group mb-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Pen Color</span>
+            </div>
+            <input type="text" id="color" class="form-control" value="black">
+        </div>
+        <div class="input-group mb-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Divisions</span>
+            </div>
+            <input type="number" value="8" id="divs" class="form-control">
+        </div>
+        <div class="input-group mb-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Radius</span>
+            </div>
+            <input type="number" value="250" id="radius" class="form-control">
+        </div>
 
-<div class="container">
-    <div class="game-space">
-        <canvas id="canvas" width="1200" height="600">
+        <div style="padding-top: 25px;">
+            <button class="btn btn-secondary" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+    <div class="col-md-9 py-md-3 pl-md-5 bd-content">
+        <canvas id="canvas" width="900" height="650">
             <script src="assets/js/abstract.js"></script>
         </canvas>
+
     </div>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
